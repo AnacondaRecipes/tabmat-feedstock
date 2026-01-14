@@ -37,7 +37,7 @@ requirements:
     - jemalloc {{ jemalloc }}  # [not win]
     - xsimd <11|>12.1
     - llvm-openmp {{ llvm_openmp }} # [osx]
-    - libgomp  # [linux]
+    - _openmp_mutex  # [linux]
   run:
     - python
     - formulaic >=0.6
@@ -45,7 +45,7 @@ requirements:
     - numpy
     - scipy
     - llvm-openmp  # [osx]
-    - libgomp  # [linux]
+    - _openmp_mutex  # [linux]
 
 # E       Arrays are not equal
 # E        ACTUAL: array([[1., 1., 0., ..., 0., 0., 0.],
