@@ -1,2 +1,5 @@
 upload_channels:
   - sfe1ed40
+
+channels:
+  - https://staging.continuum.io/pbp/fs/jemalloc-feedstock/pr3/3612771
