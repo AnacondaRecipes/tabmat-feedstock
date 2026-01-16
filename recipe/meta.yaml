@@ -28,7 +28,7 @@ requirements:
     - mako
     - numpy {{ numpy }}
     - cython !=3.0.4
-    - jemalloc-local 5.3  # [not win]
+    - jemalloc-local {{ jemalloc }}  # [not win]
     - xsimd 12.1.1
     - llvm-openmp {{ llvm_openmp }}  # [osx]
     - _openmp_mutex  # [linux]
