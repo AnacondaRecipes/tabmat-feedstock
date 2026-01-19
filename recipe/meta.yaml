@@ -29,13 +29,13 @@ requirements:
     - numpy {{ numpy }}
     - cython !=3.0.4
     - jemalloc-local {{ jemalloc }}  # [not win]
-    - xsimd 12.1.1
+    - xsimd <11|>12.1
     - llvm-openmp {{ llvm_openmp }}  # [osx]
     - _openmp_mutex  # [linux]
   run:
     - python
     - formulaic >=1.2
-    - narwhals
+    - narwhals >=2
     - numpy
     - scipy
     - llvm-openmp  # [osx]
